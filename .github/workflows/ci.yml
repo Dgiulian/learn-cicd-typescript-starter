@@ -39,7 +39,10 @@ jobs:
 
       - name: Install dependencies
         run: npm ci      
-          
+
       - name: Style
         run: npm run format:check
+      
+      - name: lint
+        run: npm run lint
       
